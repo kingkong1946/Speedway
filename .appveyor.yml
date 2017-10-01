@@ -1,4 +1,4 @@
-version: '1.0.{build}' 
+version: 0.0.1.{build}
 image: Visual Studio 2017 
 build_script:
   # dotnet info
@@ -13,4 +13,3 @@ build_script:
 
 
 test: off 
-version: 0.0.1.{build}
