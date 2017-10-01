@@ -3,3 +3,14 @@ environment:
   VisualStudioVersion: 15.0
 init:
 git config --global core.autocrlf true
+build_script:
+  # dotnet info
+  - ps: dotnet --info
+  # Run dotnet new 
+  - ps: mkdir "test\test-dotnet-new" -Force | Push-Location
+  - ps: dotnet new console -lang f#
+  - ps: dotnet restore
+  - ps: dotnet build
+  - ps: dotnet run a b
+  - ps: Pop-Location
+test: off 
