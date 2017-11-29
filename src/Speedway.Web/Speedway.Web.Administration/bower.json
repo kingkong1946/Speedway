@@ -1,0 +1,8 @@
+{
+  "name": "ASP.NET",
+  "private": true,
+  "directory": "wwwroot/lib",
+  "dependencies": {
+    "materialize": "0.100.2"
+  }
+}
