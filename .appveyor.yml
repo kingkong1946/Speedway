@@ -9,7 +9,7 @@ init:
 install: 
   # Install repo specific stuff here
   - ps: Install-Product node
-  - npm install --no-progress
+  - npm install -g @angular/cli
 before_build: 
   # Display .NET Core version 
   - cmd: dotnet --version 
@@ -31,8 +31,8 @@ test_script:
   # run the unit tests (requires changing into the test directory) 
   #- cmd: cd tests 
   #- cmd: dotnet xunit
-  - npm ng build
-  - npm test
+  - ng build
+  - ng test
 on_finish : 
   # any cleanup in here 
 deploy: off 
