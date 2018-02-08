@@ -1,0 +1,36 @@
+// Bootstrap
+$body-bg: $gray-900;
+$body-color: $white;
+
+$theme-colors: (
+  primary: $orange
+);
+
+$close-color: $body-color;
+
+$enable-rounded: false;
+$border-radius: 0px;
+$border-radius-sm: 0px;
+$border-radius-lg: 0px;
+
+$table-dark-bg: $gray-700;
+$table-dark-accent-bg: $body-bg;
+$table-dark-hover-bg: $gray-600;
+
+$modal-content-bg: $body-bg;
+
+$pagination-bg: $body-bg;
+$pagination-border-color: $table-dark-border-color;
+$pagination-active-bg: $table-dark-bg;
+$pagination-active-border-color: $table-dark-hover-bg;
+$pagination-disabled-bg: $pagination-bg;
+$pagination-disabled-border-color: $pagination-border-color;
+$pagination-hover-bg: $table-dark-hover-bg;
+
+//ag-Grid
+$ag-icons-path: '../node_modules/ag-grid/src/styles/icons/';
+$background-color: $body-bg;
+$header-background-color: $gray-800;
+$odd-row-background-color: $table-dark-hover-bg;
+$foreground-color: $body-color;
+$secondary-foreground-color: $body-color;

@@ -2,12 +2,14 @@ version: '0.0.0.{build}'
 image: Visual Studio 2017 
 branches: 
   only: 
-  - master 
-init: 
-  # Good practise, because Windows line endings are different from Unix/Linux ones 
+  - master
+init:
+  # Good practise, because Windows line endings are different from Unix/Linux ones
   - cmd: git config --global core.autocrlf true 
 install: 
-  # Install repo specific stuff here 
+  # Install repo specific stuff here
+  - ps: Install-Product node
+  - yarn install --no-progress
 before_build: 
   # Display .NET Core version 
   - cmd: dotnet --version 
@@ -28,7 +30,10 @@ test_script:
   #- cmd: dotnet restore ./tests/tests.csproj --verbosity m 
   # run the unit tests (requires changing into the test directory) 
   #- cmd: cd tests 
-  #- cmd: dotnet xunit 
+  #- cmd: dotnet xunit
+  - yarn ng -- build --prod --aot --no-progress
+  - yarn test -- --single-run --no-progress
+  - yarn lint
 on_finish : 
   # any cleanup in here 
 deploy: off 

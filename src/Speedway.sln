@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Speedway.DAL\Speedway.DAL",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Speedway.Web", "Speedway.Web", "{66CA5C9A-4A6E-41AD-A4CD-BDA3F408CE34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Speedway.Web.Administration", "Speedway.Web\Speedway.Web.Administration\Speedway.Web.Administration.csproj", "{0646441D-A774-443E-8FE9-672932090DE4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Speedway.Web.Administration", "Speedway.Web.Administration", "{A6198B7C-117D-4052-B0A7-812B0BAD154E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Speedway.Web.Administration.Server", "Speedway.Web\Speedway.Web.Administration\Speedway.Web.Administration.Server\Speedway.Web.Administration.Server.csproj", "{926F4514-2916-48AF-B32B-B624D54265BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,15 +21,16 @@ Global
 		{9E4CD382-981A-423B-A58C-122CB450752E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E4CD382-981A-423B-A58C-122CB450752E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E4CD382-981A-423B-A58C-122CB450752E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0646441D-A774-443E-8FE9-672932090DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0646441D-A774-443E-8FE9-672932090DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0646441D-A774-443E-8FE9-672932090DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0646441D-A774-443E-8FE9-672932090DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926F4514-2916-48AF-B32B-B624D54265BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926F4514-2916-48AF-B32B-B624D54265BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926F4514-2916-48AF-B32B-B624D54265BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926F4514-2916-48AF-B32B-B624D54265BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0646441D-A774-443E-8FE9-672932090DE4} = {66CA5C9A-4A6E-41AD-A4CD-BDA3F408CE34}
+		{A6198B7C-117D-4052-B0A7-812B0BAD154E} = {66CA5C9A-4A6E-41AD-A4CD-BDA3F408CE34}
+		{926F4514-2916-48AF-B32B-B624D54265BD} = {A6198B7C-117D-4052-B0A7-812B0BAD154E}
 	EndGlobalSection
 EndGlobal
