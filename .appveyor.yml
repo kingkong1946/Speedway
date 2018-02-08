@@ -31,6 +31,7 @@ test_script:
   # run the unit tests (requires changing into the test directory) 
   #- cmd: cd tests 
   #- cmd: dotnet xunit
+  - npm install
   - ng build
   - ng test
 on_finish : 
