@@ -34,7 +34,7 @@ test_script:
   - cd "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - npm install --save #"./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - ng build
-  - ng test
+  - ng test --single-run
 on_finish : 
   # any cleanup in here 
 deploy: off 
