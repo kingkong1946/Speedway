@@ -25,7 +25,7 @@ artifacts:
    name: WebSite 
    type: WebDeployPackage 
 clone_depth: 1 
-test_script: 
+test_script:
   # restore packages for our unit tests 
   #- cmd: dotnet restore ./tests/tests.csproj --verbosity m 
   # run the unit tests (requires changing into the test directory) 
@@ -35,7 +35,8 @@ test_script:
   - npm install --save #"./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - ng build
   - ng test --single-run
+
 on_finish : 
   # any cleanup in here 
-deploy: off 
+deploy: off
 
