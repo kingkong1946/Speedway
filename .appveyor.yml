@@ -31,9 +31,9 @@ test_script:
   # run the unit tests (requires changing into the test directory) 
   #- cmd: cd tests 
   #- cmd: dotnet xunit
-  - cd "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
+  #- cd "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - npm install --save
-  - ng build
+  - npm run ng build --prefix "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - ng test --single-run
 
 deploy_script:
@@ -41,7 +41,7 @@ deploy_script:
   # - cd "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - npm install --save
   - ng build --prod
-  - cd prod
+  - cd dist
   - firebase deploy --token $FIREBASE_DEPLOY_KEY
 
 on_finish : 
