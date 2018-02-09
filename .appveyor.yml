@@ -32,11 +32,17 @@ test_script:
   #- cmd: cd tests 
   #- cmd: dotnet xunit
   - cd "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
-  - npm install --save #"./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
+  - npm install --save
   - ng build
   - ng test --single-run
 
-on_finish : 
-  # any cleanup in here 
-deploy: off
+deploy_script:
+  - npm install -g firebase-tools
+  - cd "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
+  - npm install --save
+  - ng build --prod
+  - cd prod
+  - firebase deploy --token $FIREBASE_DEPLOY_KEY
 
+on_finish : 
+  # any cleanup in here
