@@ -33,7 +33,7 @@ test_script:
   #- cmd: dotnet xunit
   #- cd "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - npm install "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client" --save
-  - npm run ng build "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
+  - npm run ng build --prefix "./src/Speedway.Web/Speedway.Web.Administration/Speedway.Web.Administration.Client/speedway-web-administration-client"
   - ng test --single-run
 
 deploy_script:
